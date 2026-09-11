@@ -45,16 +45,27 @@ This project focuses on answering key business questions:
 
 ---
 
-## 📁 Dataset
+## 📁 Dataset & Data Source
+
+The raw dataset used for this project was sourced from **Kaggle**.
+
+### 🔗 [Swiggy Restaurant Data - India](https://www.kaggle.com/datasets/nikhilmaurya1324/swiggy-restaurant-data-india)
+
+**Dataset Author:** Nikhil Maurya  
+**Platform:** Kaggle  
+**Dataset:** Swiggy Restaurant Data - India
+
+The raw data was imported into **Microsoft Excel**, where it was cleaned, validated, transformed, analyzed, and used to create the final dashboard.
 
 | Attribute | Details |
 |---|---|
-| **Dataset** | Swiggy Sales Dataset |
-| **Records** | 197,430 |
+| **Source** | Kaggle |
+| **Dataset** | Swiggy Restaurant Data - India |
+| **Records Analyzed** | 197,430 |
 | **Industry** | Food Delivery / Online Food Ordering |
 | **Primary Tool** | Microsoft Excel |
 | **Primary Metric** | Sales / Revenue (INR ₹) |
-| **Data Granularity** | Transaction-level records |
+| **Data Granularity** | Transaction-level observations |
 
 ### ⚠️ Data Note
 
@@ -228,3 +239,109 @@ Swiggy-Sales-Analysis-Dashboard/
 ├── 🎨 style.css
 ├── ⚙️ script.js
 └── 📖 README.md
+```
+
+### File Description
+
+| File | Purpose |
+|---|---|
+| `Swiggy_Data.xlsx` | Excel analysis, calculations, Pivot Tables, and dashboard |
+| `DASHBOARD.png` | Dashboard preview image |
+| `index.html` | Web dashboard structure |
+| `style.css` | Web dashboard styling |
+| `script.js` | Web dashboard interactions and charts |
+| `README.md` | Project documentation |
+
+---
+
+## 🔄 Project Workflow
+
+```text
+Raw Kaggle Dataset
+        ↓
+Data Import into Excel
+        ↓
+Data Cleaning & Validation
+        ↓
+Feature Engineering
+        ↓
+Pivot Tables & Aggregation
+        ↓
+KPI Calculation
+        ↓
+Charts & Visualizations
+        ↓
+Interactive Excel Dashboard
+        ↓
+Responsive Web Dashboard
+        ↓
+GitHub Pages Deployment
+```
+
+---
+
+## 📚 Learning Outcomes
+
+Through this project, I strengthened my ability to:
+
+- Work with large transactional datasets
+- Clean and validate raw data
+- Create calculated metrics
+- Perform time-based analysis
+- Analyze geographic and category-level performance
+- Build Excel Pivot Tables and Pivot Charts
+- Design interactive dashboards using Slicers
+- Develop KPI-driven business analysis
+- Convert analytical findings into business recommendations
+- Present data insights in a portfolio-ready format
+- Publish a dashboard using GitHub Pages
+
+---
+
+## 🚀 Future Improvements
+
+Potential future enhancements include:
+
+- [ ] Build a Power BI version
+- [ ] Add Year-over-Year analysis
+- [ ] Add restaurant-level performance analysis
+- [ ] Add customer segmentation
+- [ ] Analyze repeat-customer behavior
+- [ ] Add profitability metrics
+- [ ] Automate dashboard refresh
+- [ ] Connect the dashboard to a live data source
+- [ ] Add more advanced web-dashboard filtering
+
+---
+
+## 🙏 Data Attribution
+
+This project uses the **Swiggy Restaurant Data - India** dataset available on Kaggle.
+
+### Original Dataset
+
+🔗 [Kaggle — Swiggy Restaurant Data - India](https://www.kaggle.com/datasets/nikhilmaurya1324/swiggy-restaurant-data-india)
+
+**Dataset Author:** Nikhil Maurya
+
+The dataset was used as the source for this portfolio analysis. All data cleaning, transformations, calculations, visualizations, dashboard development, and business insights presented in this project were performed as part of my analysis using Microsoft Excel.
+
+---
+
+## 👨‍💻 Author
+
+### **Satyam Kumar**
+
+**Aspiring Data Analyst**
+
+📊 Excel • SQL • Python • Data Visualization • Business Analytics
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving the repository a star!
+
+### 🚀 [Explore the Live Dashboard](https://skbr43.github.io/Swiggy-Sales-Analysis-Dashboard/)
+
+</div>
