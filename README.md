@@ -6,7 +6,7 @@ A portfolio-ready web dashboard created from my Swiggy sales analysis in Microso
 
 After uploading this project to GitHub, enable **GitHub Pages** and the dashboard will be available as:
 
-`https://YOUR-USERNAME.github.io/YOUR-REPOSITORY/`
+`https://skBR43.github.io/YOUR-REPOSITORY/`
 
 ## Dashboard Highlights
 
