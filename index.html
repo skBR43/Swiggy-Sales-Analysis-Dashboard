@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiggy Sales Analytics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">✓</div>
+        <div>
+          <div class="brand-name">Swiggy</div>
+          <div class="brand-sub">SALES INTELLIGENCE</div>
+        </div>
+      </div>
+
+      <div class="nav-label">ANALYTICS</div>
+      <button class="nav-btn active" data-section="overview">📊 <span>Overview</span></button>
+      <button class="nav-btn" data-section="trends">📈 <span>Sales Trends</span></button>
+      <button class="nav-btn" data-section="food">🍽️ <span>Food Analysis</span></button>
+      <button class="nav-btn" data-section="geo">🗺️ <span>Geography</span></button>
+      <button class="nav-btn" data-section="insights">💡 <span>Insights</span></button>
+
+      <div class="nav-label project-label">PROJECT</div>
+      <button class="nav-btn" data-section="about">📁 <span>About Project</span></button>
+
+      <div class="side-note">
+        <b>Swiggy Sales Analytics</b>
+        <span>197K+ orders analyzed</span>
+        <span>Interactive business intelligence</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <h1>Swiggy Sales Analytics 📊</h1>
+          <p>Food delivery performance • trends • customer insights</p>
+        </div>
+        <div class="status"><i></i> Dashboard Active</div>
+      </header>
+
+      <section id="overview" class="section active-section">
+        <div class="filters">
+          <select id="monthFilter">
+            <option value="all">All Months</option>
+            <option value="Jan">January</option><option value="Feb">February</option>
+            <option value="Mar">March</option><option value="Apr">April</option>
+            <option value="May">May</option><option value="Jun">June</option>
+            <option value="Jul">July</option><option value="Aug">August</option>
+          </select>
+          <select id="foodFilter">
+            <option value="all">All Food Types</option>
+            <option value="Veg">Veg</option>
+            <option value="Non-Veg">Non-Veg</option>
+          </select>
+          <select id="cityFilter">
+            <option value="all">All Cities</option>
+            <option>Bengaluru</option><option>Lucknow</option><option>Hyderabad</option>
+            <option>Mumbai</option><option>New Delhi</option>
+          </select>
+          <button id="resetFilters">Reset Filters</button>
+        </div>
+
+        <div class="kpis">
+          <div class="kpi"><div class="kpi-icon">₹</div><span>Total Sales</span><strong>₹53.01M</strong><small>▲ Overall revenue</small></div>
+          <div class="kpi"><div class="kpi-icon">★</div><span>Average Rating</span><strong>4.34</strong><small>● Strong customer rating</small></div>
+          <div class="kpi"><div class="kpi-icon">▦</div><span>Average Order Value</span><strong>₹268.51</strong><small>Per transaction</small></div>
+          <div class="kpi"><div class="kpi-icon">★</div><span>Rating Count</span><strong>5.59M</strong><small>Customer ratings</small></div>
+          <div class="kpi"><div class="kpi-icon">◈</div><span>Total Orders</span><strong>197.43K</strong><small>Records analyzed</small></div>
+        </div>
+
+        <div class="grid two">
+          <article class="card large">
+            <div class="card-head"><div><h2>Monthly Sales Performance</h2><p>Track revenue movement across months</p></div><b>SALES TREND</b></div>
+            <div class="chart-wrap"><canvas id="salesChart"></canvas></div>
+          </article>
+
+          <article class="card">
+            <div class="card-head"><div><h2>Food Type Mix</h2><p>Veg vs Non-Veg sales</p></div><b>64 / 36</b></div>
+            <div class="donut-wrap"><div class="donut"><div><strong>64%</strong><span>Veg</span></div></div></div>
+            <div class="legend"><span><i class="veg"></i> Veg</span><span><i class="nonveg"></i> Non-Veg</span></div>
+          </article>
+        </div>
+
+        <div class="grid three">
+          <article class="card">
+            <div class="card-head"><div><h2>Quarterly Performance</h2><p>Quarterly sales comparison</p></div><b>Q2 LEADER</b></div>
+            <div class="bars" id="quarterBars"></div>
+          </article>
+
+          <article class="card">
+            <div class="card-head"><div><h2>Top Cities by Sales</h2><p>Highest-performing markets</p></div><b>TOP 5</b></div>
+            <div class="city-list" id="cityList"></div>
+          </article>
+
+          <article class="card">
+            <div class="card-head"><div><h2>Quick Takeaways</h2><p>Business-focused summary</p></div></div>
+            <div class="takeaway"><span>01</span><p>May is the strongest month in the displayed period.</p></div>
+            <div class="takeaway"><span>02</span><p>Veg food contributes the larger share of sales in the dashboard.</p></div>
+            <div class="takeaway"><span>03</span><p>Bengaluru is the leading city by sales among the displayed top markets.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="trends" class="section">
+        <div class="page-title"><h2>Sales Trends</h2><p>Monthly and quarterly revenue movement.</p></div>
+        <article class="card">
+          <div class="chart-wrap tall"><canvas id="trendChart"></canvas></div>
+        </article>
+        <div class="grid three stats-row">
+          <div class="mini-stat"><span>Best month</span><strong>Jan</strong><small>₹6.80M</small></div>
+          <div class="mini-stat"><span>Lowest month</span><strong>Feb</strong><small>₹6.25M</small></div>
+          <div class="mini-stat"><span>Q2 sales</span><strong>₹19.9M</strong><small>Highest quarter</small></div>
+        </div>
+      </section>
+
+      <section id="food" class="section">
+        <div class="page-title"><h2>Food Analysis</h2><p>Understand the sales contribution of food categories.</p></div>
+        <div class="grid two">
+          <article class="card center-card"><h2>Food Type Mix</h2><div class="big-donut"><div><strong>64%</strong><span>Veg sales</span></div></div><p>Non-Veg accounts for the remaining 36% of displayed sales.</p></article>
+          <article class="card">
+            <h2>Category Summary</h2>
+            <div class="progress-row"><span>Veg</span><strong>64%</strong><div><i style="width:64%"></i></div></div>
+            <div class="progress-row"><span>Non-Veg</span><strong>36%</strong><div><i style="width:36%"></i></div></div>
+            <p class="muted">Use the original Excel workbook for category-level drill-down and detailed product analysis.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="geo" class="section">
+        <div class="page-title"><h2>Geography</h2><p>Top sales markets shown in the Excel dashboard.</p></div>
+        <article class="card">
+          <div class="city-grid" id="geoCities"></div>
+        </article>
+      </section>
+
+      <section id="insights" class="section">
+        <div class="page-title"><h2>Business Insights</h2><p>Key observations from the dashboard.</p></div>
+        <div class="insight-grid">
+          <div class="insight-card"><span>01</span><h3>Stable monthly sales</h3><p>Monthly sales remain within a relatively narrow range, with February showing the lowest displayed value and January the highest.</p></div>
+          <div class="insight-card"><span>02</span><h3>Q2 leads quarterly sales</h3><p>Q2 records the strongest quarterly sales among the displayed quarters at approximately ₹19.9M.</p></div>
+          <div class="insight-card"><span>03</span><h3>Strong customer ratings</h3><p>An average rating of 4.34 indicates a strong overall customer-rating signal.</p></div>
+          <div class="insight-card"><span>04</span><h3>Urban concentration</h3><p>Bengaluru leads the displayed top-city list, followed by Lucknow, Hyderabad, Mumbai and New Delhi.</p></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="page-title"><h2>About Project</h2><p>Swiggy Sales Analysis Dashboard</p></div>
+        <article class="card about-card">
+          <h2>Project Overview</h2>
+          <p>This portfolio project converts an Excel-based Swiggy sales analysis into a responsive web dashboard that can be published with GitHub Pages.</p>
+          <div class="tech"><span>Microsoft Excel</span><span>Pivot Tables</span><span>Data Visualization</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <h3>Dashboard KPIs</h3>
+          <ul>
+            <li>Total Sales: ₹53.01M</li><li>Average Rating: 4.34</li><li>Average Order Value: ₹268.51</li>
+            <li>Rating Count: 5.59M</li><li>Total Orders: 197.43K</li>
+          </ul>
+          <p class="muted">The web version is designed from the metrics visible in the supplied Excel dashboard. When the workbook is updated, the displayed values can be updated in <code>script.js</code>.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
