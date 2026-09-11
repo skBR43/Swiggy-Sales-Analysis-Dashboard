@@ -1,60 +1,230 @@
-# Swiggy Sales Analytics Dashboard 📊
+<div align="center">
 
-A portfolio-ready web dashboard created from my Swiggy sales analysis in Microsoft Excel.
+# 🍔 Swiggy Sales Analysis Dashboard
 
-## Live Dashboard
+### Turning 197K+ transaction records into actionable food-delivery insights.
 
-After uploading this project to GitHub, enable **GitHub Pages** and the dashboard will be available as:
+[![Excel](https://img.shields.io/badge/Tool-Microsoft%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white)]()
+[![Data Analysis](https://img.shields.io/badge/Focus-Data%20Analysis-0052CC?style=for-the-badge)]()
+[![Food Delivery](https://img.shields.io/badge/Industry-Food%20Delivery-FC8019?style=for-the-badge)]()
+[![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-222222?style=for-the-badge&logo=github&logoColor=white)]()
 
-`https://skBR43.github.io/YOUR-REPOSITORY/`
+<br>
 
-## Dashboard Highlights
+### 🚀 [LIVE INTERACTIVE DASHBOARD](https://skbr43.github.io/Swiggy-Sales-Analysis-Dashboard/)
 
-- **Total Sales:** ₹53.01M
-- **Average Rating:** 4.34
-- **Average Order Value:** ₹268.51
-- **Rating Count:** 5.59M
-- **Total Orders:** 197.43K
-- Monthly sales trend from January to August
-- Quarterly sales comparison
-- Veg vs Non-Veg sales mix
-- Top cities by sales
-- Business insights section
-- Responsive layout for desktop and mobile
+</div>
 
-## Tech Stack
+---
 
-- Microsoft Excel — source analysis
-- HTML5
-- CSS3
-- JavaScript
-- GitHub Pages
+## 📌 Project Overview
 
-## Repository Structure
+The **Swiggy Sales Analysis Dashboard** is an interactive business intelligence project developed using **Microsoft Excel** to analyze food-delivery transaction data.
+
+The project analyzes **197,430 transaction-level records** to understand sales performance, customer ratings, food preferences, geographic performance, and time-based trends.
+
+The objective is to transform raw transactional data into meaningful business insights and present them through an intuitive, interactive dashboard.
+
+A responsive **web version of the dashboard** is also available through GitHub Pages, making the project easy to explore and share across devices.
+
+---
+
+## 🎯 Business Problem
+
+Food-delivery platforms generate large volumes of transactional data. Without structured analysis, it can be difficult to identify important sales patterns and business opportunities.
+
+This project focuses on answering key business questions:
+
+- 📈 How are sales changing over time?
+- 📅 Which months, weekdays, and quarters perform best?
+- 🗺️ Which cities generate the highest sales?
+- 🍽️ What is the sales contribution of Vegetarian vs Non-Vegetarian food?
+- ⭐ What is the overall customer rating?
+- 💰 What is the average value generated per transaction?
+- 📊 Which markets and categories show stronger performance?
+
+---
+
+## 📁 Dataset
+
+| Attribute | Details |
+|---|---|
+| **Dataset** | Swiggy Sales Dataset |
+| **Records** | 197,430 |
+| **Industry** | Food Delivery / Online Food Ordering |
+| **Primary Tool** | Microsoft Excel |
+| **Primary Metric** | Sales / Revenue (INR ₹) |
+| **Data Granularity** | Transaction-level records |
+
+### ⚠️ Data Note
+
+The dataset does not contain a unique **Order ID**.
+
+Therefore, the **197,430 dataset records are treated as transaction-level observations** for this analysis.
+
+---
+
+## 📊 Executive KPIs
+
+| KPI | Value |
+|---|---:|
+| 💰 **Total Sales** | ₹53,012,505.77 |
+| 🛒 **Total Transactions** | 197,430 |
+| 💵 **Average Order Value** | ₹268.51 |
+| ⭐ **Average Rating** | 4.34 / 5.0 |
+| 💬 **Rating Count** | 5,591,574 |
+
+These KPIs provide a high-level view of overall sales performance and customer-rating activity.
+
+---
+
+## 🔍 Key Business Insights
+
+### 1. 📈 Strong Overall Sales Performance
+
+The analyzed dataset generated approximately **₹5.30 Crore in total sales**, representing the overall sales value across the available transaction records.
+
+### 2. 📅 Q2 Shows the Strongest Quarterly Performance
+
+Among the displayed quarters, **Q2 records the highest sales**, making it an important period for understanding demand patterns and promotional opportunities.
+
+### 3. 🗺️ Bengaluru Leads the Top City Rankings
+
+**Bengaluru** is the highest-performing city among the top cities analyzed by sales.
+
+Other major markets in the top-city analysis include:
+
+- Lucknow
+- Hyderabad
+- Mumbai
+- New Delhi
+
+### 4. 🍽️ Vegetarian Food Has a Larger Sales Contribution
+
+The dashboard indicates that **Vegetarian food contributes a larger share of sales than Non-Vegetarian food**.
+
+This highlights an opportunity to further investigate vegetarian category demand and restaurant assortment.
+
+### 5. ⭐ Strong Customer Rating
+
+The dataset records an **average rating of 4.34/5**, indicating a strong overall customer-rating signal.
+
+---
+
+## 💡 Business Recommendations
+
+Based on the observed dashboard trends:
+
+### 📍 Focus on High-Performing Markets
+
+High-sales cities such as Bengaluru can be prioritized for:
+
+- Restaurant partnerships
+- Customer-retention initiatives
+- Localized promotional campaigns
+- Delivery-capacity planning
+
+### 🍽️ Strengthen Vegetarian Offerings
+
+Given the larger contribution from Vegetarian sales, restaurant partners could explore:
+
+- Expanding vegetarian menu options
+- Creating vegetarian combo meals
+- Category-specific promotions
+- Premium vegetarian offerings
+
+### 📅 Optimize Promotional Timing
+
+Monthly, weekly, and quarterly sales trends can help identify stronger demand periods and support better planning of:
+
+- Promotional campaigns
+- Push notifications
+- Discounts
+- Restaurant promotions
+
+### 🤝 Strengthen Restaurant Partnerships
+
+High-performing markets can be prioritized for restaurant acquisition and partner-retention strategies to support continued sales growth.
+
+---
+
+## 🛠️ Tools & Technical Skills
+
+### Microsoft Excel
+
+- Data Cleaning
+- Data Validation
+- Formula-based Feature Engineering
+- Pivot Tables
+- Pivot Charts
+- Slicers
+- KPI Calculations
+- Conditional Formatting
+- Dashboard Design
+- Business Analysis
+
+### Analytical Techniques
+
+- Data Aggregation
+- Trend Analysis
+- Time-based Analysis
+- Geographic Analysis
+- Category Analysis
+- Comparative Analysis
+- KPI Development
+- Business Insight Generation
+
+---
+
+## 📊 Dashboard Features
+
+The Excel dashboard provides an interactive view of:
+
+- 🎯 KPI Cards
+- 📈 Monthly Sales Performance
+- 📅 Quarterly Sales Analysis
+- 📊 Daily / Weekly Sales Analysis
+- 🍽️ Food Type Analysis
+- 🗺️ Geographic Sales Analysis
+- 🏙️ Top Cities by Sales
+- ⭐ Customer Rating Analysis
+- 🎛️ Interactive Slicers
+- 🔎 Dynamic Filtering
+
+---
+
+## 🖥️ Dashboard Preview
+
+<div align="center">
+
+<img src="DASHBOARD.png" alt="Swiggy Sales Analysis Dashboard" width="900">
+
+<br><br>
+
+<i>Swiggy Sales Analysis Dashboard developed in Microsoft Excel.</i>
+
+</div>
+
+---
+
+## 🌐 Live Interactive Dashboard
+
+To make the project easier to explore and share, a responsive web version of the dashboard is hosted using **GitHub Pages**.
+
+### 🚀 [Open Live Dashboard](https://skbr43.github.io/Swiggy-Sales-Analysis-Dashboard/)
+
+The web version presents the major dashboard metrics, sales trends, food analysis, geographic performance, and business insights in an interactive format.
+
+---
+
+## 📁 Repository Structure
 
 ```text
-swiggy-sales-github-dashboard/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
-
-## How to Publish on GitHub Pages
-
-1. Create a new GitHub repository.
-2. Upload `index.html`, `style.css`, `script.js`, and `README.md`.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`.
-6. Save and wait for GitHub Pages to publish the site.
-7. Open the generated `github.io` URL.
-
-## Important
-
-The web dashboard currently uses the KPI and chart values visible in the supplied Excel dashboard screenshot. If the underlying workbook contains additional columns, cities, categories, or exact daily-sales values, those can be wired into `script.js` for a fully data-driven version.
-
-## Author
-
-**Satyam Kumar**  
-Aspiring Data Analyst | Excel | SQL | Python | Data Visualization
+Swiggy-Sales-Analysis-Dashboard/
+│
+├── 📊 Swiggy_Data.xlsx
+├── 🖼️ DASHBOARD.png
+├── 🌐 index.html
+├── 🎨 style.css
+├── ⚙️ script.js
+└── 📖 README.md
